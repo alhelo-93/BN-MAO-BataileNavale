@@ -21,9 +21,9 @@
 #define SHTB 194 // ┬, Single Horizontal Top Border
 #define SC   197 // ┼, Single Center
 //
-#define size 8
+#define size 10
 #pragma execution_character_set("utf-8")
-int Num = 1;
+;
 
 int grillemodele[10][10] = {
         {3,0,0,0,0,0,0,0,0,9},
@@ -44,32 +44,32 @@ void topborder(int width) { //function pour premier ┌─────┬──�
     printf("   ");
     printf("%c%c%c", STLC, SHSB, SHSB);//┌──
 
-    for (int i = 0; i <= width; i++) {
+    for (int i = 0; i < width-1; i++) {
         printf("%c%c%c%c%c", SHSB, SHSB, SHTB, SHSB, SHSB);// ───┬───
     }
     printf("%c%c%c\n", SHSB, SHSB, STRC);//──┐
 }
 
-void centerborder(int width) {
+void centerborder(int Num ,int width) {
 
 
-    printf("%3d", Num);
+    printf("%3d", Num+1);
 
     printf("%c  ", SVSB); //│
 
-    for (int i = 0; i <= 9;i++) { //│   │    │
-        printf("%d %c  ",grillemodele[Num-1][i],SVSB);
+    for (int i = 0; i < width;i++) { //│   │    │
+
+        printf("%d %c  ",grillemodele[Num][i],SVSB);
 
     }
     printf("\n");//│
-           Num++;
 }
 
 void crossborder(int width) {
     printf("   ");
     printf("%c%c%c", SVLB, SHSB, SHSB);//├──
 
-    for (int i = 0; i <= width; i++) {
+    for (int i = 0; i < width-1; i++) {
         printf("%c%c%c%c%c", SHSB, SHSB, SC, SHSB, SHSB);// ───┼───
     }
     printf("%c%c%c\n", SHSB, SHSB, SVRB);//──┤
@@ -79,7 +79,7 @@ void bottom(int width) {
     printf("   ");
     printf("%c%c%c", SBLC, SHSB, SHSB);//└──
 
-    for (int i = 0; i <= width; i++) {
+    for (int i = 0; i < width-1; i++) {
         printf("%c%c%c%c%c", SHSB, SHSB, SHBB, SHSB, SHSB);// ───┴───
     }
     printf("%c%c%c\n", SHSB, SHSB, SBRC);//──┘
@@ -91,15 +91,12 @@ void gillevid() {
     for (int row = 0; row < size; row++) {
         if (row == 0) {
             topborder(size);
-            centerborder(size);
         } else {
-            centerborder(size);
+            crossborder(size);
         }
-        crossborder(size);
+        centerborder(row,size);
     }
-    centerborder(size);
-    crossborder(size);
-    centerborder(size);
+
     bottom(size);
 }
 
