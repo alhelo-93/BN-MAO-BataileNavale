@@ -1,3 +1,0 @@
-C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/test grille/cmake-build-debug/CMakeFiles/test_grille.dir
-C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/test grille/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/test grille/cmake-build-debug/CMakeFiles/rebuild_cache.dir

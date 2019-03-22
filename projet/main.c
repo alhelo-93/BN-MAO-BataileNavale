@@ -4,6 +4,8 @@
  * titre:bataille navale
  *
  */
+
+
 #include <stdio.h>
 #include <windows.h>
 // graphique pour le grille
@@ -21,79 +23,108 @@
 //
 #define size 8
 #pragma execution_character_set("utf-8")
+int Num = 1;
+
+int grillemodele[10][10] = {
+        {3,0,0,0,0,0,0,0,0,9},
+        {3,0,0,0,0,0,1,0,0,9},
+        {3,0,0,0,0,0,0,0,0,9},
+        {0,0,0,0,0,0,0,0,0,9},
+        {0,0,0,0,0,0,0,0,0,9},
+        {0,0,0,0,0,0,0,0,0,9},
+        {0,0,0,0,0,0,0,0,0,9},
+        {0,0,0,0,0,0,0,0,0,9},
+        {0,0,2,2,0,0,0,0,0,9},
+        {0,0,0,0,0,0,0,0,0,9},};
+
 
 // fonction de dessin
- void topborder(int width) { //function pour premier ┌─────┬─────┐
-     SetConsoleOutputCP(437); // For semi-graphic characters
-     printf("%c%c%c",STLC,SHSB,SHSB);//┌──
+void topborder(int width) { //function pour premier ┌─────┬─────┐
+    SetConsoleOutputCP(437); // For semi-graphic characters$
+    printf("   ");
+    printf("%c%c%c", STLC, SHSB, SHSB);//┌──
 
-     for(int i=0; i<=width; i++){
-         printf ("%c%c%c%c%c",SHSB,SHSB,SHTB,SHSB,SHSB);// ───┬───
-     }
-     printf("%c%c%c\n",SHSB,SHSB,STRC);//──┐
- }
- void centerborder(int width){
-     printf("%c   ",SVSB); //│
-     for(int i=0; i<=width; i++){ //│   │    │
-         printf (" %c   ",SVSB);
-     }
-     printf(" %c\n",SVSB);//│
- }
- void crossborder(int width){
-    printf("%c%c%c",SVLB,SHSB,SHSB);//├──
-
-    for(int i=0; i<=width; i++){
-        printf ("%c%c%c%c%c",SHSB,SHSB,SC,SHSB,SHSB);// ───┼───
+    for (int i = 0; i <= width; i++) {
+        printf("%c%c%c%c%c", SHSB, SHSB, SHTB, SHSB, SHSB);// ───┬───
     }
-    printf("%c%c%c\n",SHSB,SHSB,SVRB);//──┤
+    printf("%c%c%c\n", SHSB, SHSB, STRC);//──┐
 }
- void bottom(int width){
-     printf("%c%c%c",SBLC,SHSB,SHSB);//└──
 
-     for(int i=0; i<=width; i++){
-         printf ("%c%c%c%c%c",SHSB,SHSB,SHBB,SHSB,SHSB);// ───┴───
-     }
-     printf("%c%c%c\n",SHSB,SHSB,SBRC);//──┘
+void centerborder(int width) {
 
- }
+
+    printf("%3d", Num);
+    printf("%c  ", SVSB); //│
+    int i = 0;
+
+    for (i; i <= 9;i++) { //│   │    │
+        printf("%d %c  ",grillemodele[Num-1][i],SVSB);
+
+
+    }
+    printf("\n");//│
+    Num++;
+}
+
+void crossborder(int width) {
+    printf("   ");
+    printf("%c%c%c", SVLB, SHSB, SHSB);//├──
+
+    for (int i = 0; i <= width; i++) {
+        printf("%c%c%c%c%c", SHSB, SHSB, SC, SHSB, SHSB);// ───┼───
+    }
+    printf("%c%c%c\n", SHSB, SHSB, SVRB);//──┤
+}
+
+void bottom(int width) {
+    printf("   ");
+    printf("%c%c%c", SBLC, SHSB, SHSB);//└──
+
+    for (int i = 0; i <= width; i++) {
+        printf("%c%c%c%c%c", SHSB, SHSB, SHBB, SHSB, SHSB);// ───┴───
+    }
+    printf("%c%c%c\n", SHSB, SHSB, SBRC);//──┘
+
+}
+
 // fonction de grille complet
-void gillevid(){
-     for(int row=0; row < size; row++){
-         if(row==0)
-         {
-             topborder(size);
-             centerborder(size);
-         }
-         else{
-             centerborder(size);
-         }
-         crossborder(size);
-     }
-     centerborder(size);
-     bottom(size);
- }
+void gillevid() {
+    for (int row = 0; row < size; row++) {
+        if (row == 0) {
+            topborder(size);
+            centerborder(size);
+        } else {
+            centerborder(size);
+        }
+        crossborder(size);
+    }
+    centerborder(size);
+    crossborder(size);
+    centerborder(size);
+    bottom(size);
+}
 
 
 int main() {
-    SetConsoleOutputCP(65001);
-    int choix=1;
-
+    int choix = 1;
     while (choix != 0) {
-        printf(" \n1.Commence jouer\n2.Affiche d'aide\n3.par rapport le jeu\n0. Quitter \nvotre choix:\n");
+        SetConsoleOutputCP(65001);
+        printf(" \n1. Commence à jouer\n2. Affiche d'aide\n3. par rapport le jeu\n0. Quitter \n votre choix:\n");
         scanf("%d", &choix);
+
 
         if (choix == 3) {
 
             printf("C'est un jou simple pour il faut attaquer les ennmies et puis survivre ");
 
-        } else if(choix==1){
-          gillevid(size);
-        }
-        else if (choix == 2) {
+        } else if (choix == 1) {
+            printf("     A    B    C    D    E    F    G    H    I    J\n");
+            gillevid(size);
+        } else if (choix == 2) {
             printf("comment jouer ?\n il faut regarder sur la grilles et savoir votre postistion et la position de votre énnmie aussi puis bouuuf attaquer");
 
         } else {
-            printf("on est gooo !");
+            printf("Au revoir  !");
 
         }
     }
