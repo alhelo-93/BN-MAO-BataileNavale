@@ -54,16 +54,15 @@ void centerborder(int width) {
 
 
     printf("%3d", Num);
+
     printf("%c  ", SVSB); //│
-    int i = 0;
 
-    for (i; i <= 9;i++) { //│   │    │
+    for (int i = 0; i <= 9;i++) { //│   │    │
         printf("%d %c  ",grillemodele[Num-1][i],SVSB);
-
 
     }
     printf("\n");//│
-    Num++;
+           Num++;
 }
 
 void crossborder(int width) {
