@@ -5,7 +5,6 @@
  *
  */
 
-
 #include <stdio.h>
 #include <windows.h>
 // graphique pour le grille
@@ -105,21 +104,24 @@ int main() {
     int choix = 1;
     while (choix != 0) {
         SetConsoleOutputCP(65001);
-        printf(" \n1. Commence à jouer\n2. Affiche d'aide\n3. par rapport le jeu\n0. Quitter \n votre choix:\n");
+        printf(" \n1.Affiche l'aide \n2.placer les bateaux  \n3.Jouer\n0.Quitter \n");
+        printf("Quel est votre choix ?\n");
         scanf("%d", &choix);
 
 
-        if (choix == 3) {
+        if (choix == 1) {
 
+            printf("Comment jouer ?\nIl faut regarder sur la grilles et savoir votre postistion \nEt la position de votre énnmie aussi puis bouuuf attaquer.");
+
+        } else if (choix == 2) {
+            int menu2;
+            while (menu2){}
             printf("C'est un jou simple pour il faut attaquer les ennmies et puis survivre ");
 
-        } else if (choix == 1) {
+        } else if (choix == 3) {
             printf("     A    B    C    D    E    F    G    H    I    J\n");
             gillevid(size);
-        } else if (choix == 2) {
-            printf("comment jouer ?\n il faut regarder sur la grilles et savoir votre postistion et la position de votre énnmie aussi puis bouuuf attaquer");
-
-        } else {
+        }else {
             printf("Au revoir  !");
 
         }
