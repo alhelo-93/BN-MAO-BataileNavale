@@ -25,16 +25,16 @@
 ;
 
 int grillemodele[10][10] = {
-        {3,0,0,0,0,0,0,0,0,9},
-        {3,0,0,0,0,0,1,0,0,9},
-        {3,0,0,0,0,0,0,0,0,9},
-        {0,0,0,0,0,0,0,0,0,9},
-        {0,0,0,0,0,0,0,0,0,9},
-        {0,0,0,0,0,0,0,0,0,9},
-        {0,0,0,0,0,0,0,0,0,9},
-        {0,0,0,0,0,0,0,0,0,9},
-        {0,0,2,2,0,0,0,0,0,9},
-        {0,0,0,0,0,0,0,0,0,9},};
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+        {3, 0, 0, 0, 0, 0, 1, 0, 0, 9},
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+        {0, 0, 2, 2, 0, 0, 0, 0, 0, 9},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},};
 
 
 // fonction de dessin
@@ -43,22 +43,22 @@ void topborder(int width) { //function pour premier ┌─────┬──�
     printf("   ");
     printf("%c%c%c", STLC, SHSB, SHSB);//┌──
 
-    for (int i = 0; i < width-1; i++) {
+    for (int i = 0; i < width - 1; i++) {
         printf("%c%c%c%c%c", SHSB, SHSB, SHTB, SHSB, SHSB);// ───┬───
     }
     printf("%c%c%c\n", SHSB, SHSB, STRC);//──┐
 }
 
-void centerborder(int Num ,int width) {
+void centerborder(int Num, int width) {
 
 
-    printf("%3d", Num+1);
+    printf("%3d", Num + 1);
 
     printf("%c  ", SVSB); //│
 
-    for (int i = 0; i < width;i++) { //│   │    │
+    for (int i = 0; i < width; i++) { //│   │    │
 
-        printf("%d %c  ",grillemodele[Num][i],SVSB);
+        printf("%d %c  ", grillemodele[Num][i], SVSB);
 
     }
     printf("\n");//│
@@ -68,7 +68,7 @@ void crossborder(int width) {
     printf("   ");
     printf("%c%c%c", SVLB, SHSB, SHSB);//├──
 
-    for (int i = 0; i < width-1; i++) {
+    for (int i = 0; i < width - 1; i++) {
         printf("%c%c%c%c%c", SHSB, SHSB, SC, SHSB, SHSB);// ───┼───
     }
     printf("%c%c%c\n", SHSB, SHSB, SVRB);//──┤
@@ -78,7 +78,7 @@ void bottom(int width) {
     printf("   ");
     printf("%c%c%c", SBLC, SHSB, SHSB);//└──
 
-    for (int i = 0; i < width-1; i++) {
+    for (int i = 0; i < width - 1; i++) {
         printf("%c%c%c%c%c", SHSB, SHSB, SHBB, SHSB, SHSB);// ───┴───
     }
     printf("%c%c%c\n", SHSB, SHSB, SBRC);//──┘
@@ -93,7 +93,7 @@ void gillevid() {
         } else {
             crossborder(size);
         }
-        centerborder(row,size);
+        centerborder(row, size);
     }
 
     bottom(size);
@@ -109,19 +109,43 @@ int main() {
         scanf("%d", &choix);
 
 
-        if (choix == 1) {
+        if (choix > 3) {
 
+            printf("Choisissez de la list s'il vous plaît");
+
+        } else if(choix == 1){
             printf("Comment jouer ?\nIl faut regarder sur la grilles et savoir votre postistion \nEt la position de votre énnmie aussi puis bouuuf attaquer.");
+        }else if (choix == 2) {
+            int menu2 = 1;
+            while (menu2 != 0) {
+                printf("\n1.Grille fixe \n2.Choix d'une grille existant \n3. placement aléatoir");
+                printf("Quel est votre choix ?\n");
+                scanf("%d",&menu2);
+                if(menu2 > 3 ){
+                    printf("Choisissez de la list s'il vous plaît");
+                }else if(menu2 == 1){
 
-        } else if (choix == 2) {
-            int menu2;
-            while (menu2){}
-            printf("C'est un jou simple pour il faut attaquer les ennmies et puis survivre ");
+                    printf("pas encour donné !!");
+
+                }else if(menu2 == 2){
+
+                    printf("pas encour donné !!");
+
+                }else if (menu2 == 3){
+
+                    printf("pas encour donné !!");
+
+                }else{
+                    printf("Au revoir  !");
+                }
+
+            }
+
 
         } else if (choix == 3) {
-            printf("     A    B    C    D    E    F    G    H    I    J\n");
+            printf("      A    B    C    D    E    F    G    H    I    J\n");
             gillevid(size);
-        }else {
+        } else {
             printf("Au revoir  !");
 
         }
