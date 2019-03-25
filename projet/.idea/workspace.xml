@@ -30,14 +30,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+            <state relative-caret-position="1173">
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
               <folding>
-                <element signature="e#1104#1482#0" />
-                <element signature="e#1484#1717#0" />
-                <element signature="e#1719#1976#0" />
-                <element signature="e#1978#2233#0" />
-                <element signature="e#2235#2495#0" />
+                <element signature="e#82#100#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,12 +64,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -122,17 +129,30 @@
       <workItem from="1553250217105" duration="179000" />
       <workItem from="1553250483567" duration="588000" />
       <workItem from="1553264851478" duration="1984000" />
+<<<<<<< HEAD
       <workItem from="1553421598318" duration="9276000" />
+=======
+      <workItem from="1553421598318" duration="9236000" />
+      <workItem from="1553498771890" duration="763000" />
+      <workItem from="1553500016947" duration="161000" />
+      <workItem from="1553500193983" duration="61000" />
+      <workItem from="1553500331612" duration="96000" />
+      <workItem from="1553500476632" duration="2737000" />
+>>>>>>> a33734baab5434e85257245fd75e98578c1a6e7a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="43311000" />
+=======
+    <option name="totallyTimeSpent" value="47089000" />
+>>>>>>> a33734baab5434e85257245fd75e98578c1a6e7a
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15884861" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16684435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -166,14 +186,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+        <state relative-caret-position="1173">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
           <folding>
-            <element signature="e#1104#1482#0" />
-            <element signature="e#1484#1717#0" />
-            <element signature="e#1719#1976#0" />
-            <element signature="e#1978#2233#0" />
-            <element signature="e#2235#2495#0" />
+            <element signature="e#82#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
