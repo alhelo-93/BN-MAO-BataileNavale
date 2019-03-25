@@ -114,11 +114,11 @@ int main() {
             printf("Choisissez de la list s'il vous plaît");
 
         } else if(choix == 1){
-            printf("Comment jouer ?\nIl faut regarder sur la grilles et savoir votre postistion \nEt la position de votre énnmie aussi puis bouuuf attaquer.");
+            printf("Comment jouer ?\nIl faut regarder sur la grilles et savoir votre postistion \nEt la position de votre énnmie aussi puis bouuuf attaquer.\n\n");
         }else if (choix == 2) {
             int menu2 = 1;
             while (menu2 != 0) {
-                printf("\n1.Grille fixe \n2.Choix d'une grille existant \n3. placement aléatoir");
+                printf("\n1.Grille fixe \n2.Choix d'une grille existant \n3.placement aléatoir\n4.Retour arrière\n\n");
                 printf("Quel est votre choix ?\n");
                 scanf("%d",&menu2);
                 if(menu2 > 3 ){
