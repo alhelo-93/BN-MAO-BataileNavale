@@ -120,7 +120,7 @@ int main() {
         scanf("%d", &choix);
 
 
-        if (choix > 3) {
+        if (choix > 3 && choix == 'A') {
 
             printf("Choisissez de la list s'il vous plaît\n");
 
