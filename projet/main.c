@@ -42,8 +42,8 @@ int grillemodele[10][10] = {
 void topborder(int width) {
     SetConsoleOutputCP(437); // For semi-graphic characters$
     printf("    ");
-    for(int j=0; j < width; j++){
-        printf(" %c   ", j+ 'A');
+    for (int j = 0; j < width; j++) {
+        printf(" %c   ", j + 'A');
     }
     printf("\n");
     printf("   ");
@@ -54,6 +54,7 @@ void topborder(int width) {
     }
     printf("%c%c%c\n", SHSB, SHSB, STRC);//──┐
 }
+
 //│   │    │
 void centerborder(int Num, int width) {
 
@@ -64,11 +65,12 @@ void centerborder(int Num, int width) {
 
     for (int i = 0; i < width; i++) { //│   │    │
 
-        printf("%d %c  ", grillemodele[Num][i], SVSB);
+        printf("~ %c  ", SVSB);
 
     }
     printf("\n");//│
 }
+
 //├─────┼─────┤
 void crossborder(int width) {
     printf("   ");
@@ -79,6 +81,7 @@ void crossborder(int width) {
     }
     printf("%c%c%c\n", SHSB, SHSB, SVRB);//──┤
 }
+
 //└─────┴─────┘
 void bottom(int width) {
     printf("   ");
@@ -113,55 +116,76 @@ void gillevid() {
 
 int main() {
     int choix = 1;
+    int menu2 = 1;
     while (choix != 0) {
         SetConsoleOutputCP(65001);
+        //system("cls");
         printf(" \n1.Affiche l'aide \n2.placer les bateaux  \n3.Jouer\n0.Quitter \n");
         printf("Quel est votre choix ?\n");
         scanf("%d", &choix);
 
+        switch (choix) {
 
-        if (choix > 3 && choix == 'A') {
+            case 0:
+                break;
+            case 1:
+                printf("Comment jouer ?\nIl faut regarder sur la grilles et savoir votre postistion \nEt la position de votre énnmie aussi puis bouuuf attaquer.\n\n");
+                break;
+            case 2:
 
-            printf("Choisissez de la list s'il vous plaît\n");
+                while (menu2 != 0) {
+                    //system("cls");
+                    printf("\n1.Grille fixe \n2.Choix d'une grille existant \n3.placement aléatoir\n0.Retour arrière");
 
-        } else if(choix == 1){
-            printf("Comment jouer ?\nIl faut regarder sur la grilles et savoir votre postistion \nEt la position de votre énnmie aussi puis bouuuf attaquer.\n\n");
-        }else if (choix == 2) {
-            int menu2 = 1;
-            while (menu2 != 0) {
-                printf("\n1.Grille fixe \n2.Choix d'une grille existant \n3.placement aléatoir\n4.Retour arrière\n\n");
-                printf("Quel est votre choix ?\n");
-                scanf("%d",&menu2);
-                if(menu2 > 3 ){
-                    printf("Choisissez de la list s'il vous plaît\n");
-                }else if(menu2 == 1){
-
-                    printf("pas encour donné !!");
-
-                }else if(menu2 == 2){
-
-                    printf("pas encour donné !!");
-
-                }else if (menu2 == 3){
-
-                    printf("pas encour donné !!");
-
-                }else{
-                    printf("Au revoir  !");
+                    printf("\nQuel est votre choix ?\n");
+                    scanf("%d", &menu2);
+                    switch (menu2) {
+                        case 0:
+                            break;
+                        case 1:
+                            printf("pas encour donné !!");
+                            break;
+                        case 2:
+                            printf("pas encour donné !!");
+                            break;
+                        case 3:
+                            printf("pas encour donné !!");
+                            break;
+                        default:
+                            printf("Choisissez de la list s'il vous plaît\n");
+                            break;
+                    }
                 }
 
-            }
-
-
-        } else if (choix == 3) {
-
-            gillevid(size);
-        } else {
-            printf("Au revoir  !");
-
+                break;
+            case 3:
+                gillevid(size);
+                break;
+            default:
+                printf("Choisissez de la list s'il vous plaît\n");
+                break;
         }
-    }
 
+    }
     return 0;
 
 }
+/* if (choix > 3) {
+
+        printf("Choisissez de la list s'il vous plaît\n");
+
+    } else if (choix == 1) {
+
+    } else if (choix == 2) {
+
+        }
+
+
+    } else if (choix == 3) {
+
+
+    } else {
+        printf("Au revoir  !");
+
+    }
+}*/

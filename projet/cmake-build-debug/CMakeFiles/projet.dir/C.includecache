@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
-C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/main.c
-=======
-C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/main.c
->>>>>>> 6cd0b69b03474ea90db0e64aeff3d92a7e1ce297
+C:/Users/Marwan.ALHELO/Documents/GitHub/BN-MAO-BataileNavale/projet/main.c
 stdio.h
 -
 windows.h
