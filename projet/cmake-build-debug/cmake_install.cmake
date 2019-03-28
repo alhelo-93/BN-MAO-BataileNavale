@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Users/Marwan.ALHELO/Documents/GitHub/BN-MAO-BataileNavale/Projet
+=======
+# Install script for directory: C:/Users/marwa/Documents/Github/BN-MAO-BataileNavale/projet
+>>>>>>> fcf0b1f534e85696b124b6d3da31c1adf5b945a5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +44,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "C:/Users/Marwan.ALHELO/Documents/GitHub/BN-MAO-BataileNavale/Projet/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/marwa/Documents/Github/BN-MAO-BataileNavale/projet/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> fcf0b1f534e85696b124b6d3da31c1adf5b945a5
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,18 @@
+<<<<<<< HEAD
 "C:\Program Files (x86)\CLion\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Marwan.ALHELO\Documents\GitHub\BN-MAO-BataileNavale\Projet
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/Marwan.ALHELO/Documents/GitHub/BN-MAO-BataileNavale/Projet/cmake-build-debug
+=======
+"C:\Program Files (x86)\CLion-2018.2.6\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\marwa\Documents\Github\BN-MAO-BataileNavale\projet
+-- The C compiler identification is GNU 6.3.0
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/marwa/Documents/Github/BN-MAO-BataileNavale/projet/cmake-build-debug
+>>>>>>> fcf0b1f534e85696b124b6d3da31c1adf5b945a5

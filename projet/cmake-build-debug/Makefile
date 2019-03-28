@@ -38,19 +38,26 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files (x86)\CLion\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files (x86)\CLion-2018.2.6\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files (x86)\CLion\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files (x86)\CLion-2018.2.6\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = C:\Users\Marwan.ALHELO\Documents\GitHub\BN-MAO-BataileNavale\Projet
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Users\Marwan.ALHELO\Documents\GitHub\BN-MAO-BataileNavale\Projet\cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = C:\Users\marwa\Documents\Github\BN-MAO-BataileNavale\projet
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = C:\Users\marwa\Documents\Github\BN-MAO-BataileNavale\projet\cmake-build-debug
+>>>>>>> fcf0b1f534e85696b124b6d3da31c1adf5b945a5
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +65,7 @@ CMAKE_BINARY_DIR = C:\Users\Marwan.ALHELO\Documents\GitHub\BN-MAO-BataileNavale\
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files (x86)\CLion\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files (x86)\CLion-2018.2.6\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +76,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files (x86)\CLion\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files (x86)\CLion-2018.2.6\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +86,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Marwan.ALHELO\Documents\GitHub\BN-MAO-BataileNavale\Projet\cmake-build-debug\CMakeFiles C:\Users\Marwan.ALHELO\Documents\GitHub\BN-MAO-BataileNavale\Projet\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Marwan.ALHELO\Documents\GitHub\BN-MAO-BataileNavale\Projet\cmake-build-debug\CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\marwa\Documents\Github\BN-MAO-BataileNavale\projet\cmake-build-debug\CMakeFiles C:\Users\marwa\Documents\Github\BN-MAO-BataileNavale\projet\cmake-build-debug\CMakeFiles\progress.marks
+	$(MAKE) -f CMakeFiles\Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\marwa\Documents\Github\BN-MAO-BataileNavale\projet\cmake-build-debug\CMakeFiles 0
+>>>>>>> fcf0b1f534e85696b124b6d3da31c1adf5b945a5
 .PHONY : all
 
 # The main clean target
