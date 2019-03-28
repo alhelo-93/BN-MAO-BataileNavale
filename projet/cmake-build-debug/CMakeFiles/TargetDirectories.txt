@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/CMakeFiles/projet.dir
 C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/CMakeFiles/projet.dir
+C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> 6cd0b69b03474ea90db0e64aeff3d92a7e1ce297

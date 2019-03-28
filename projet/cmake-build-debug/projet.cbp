@@ -8,6 +8,7 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< HEAD
 				<Option working_dir="C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -20,6 +21,20 @@
 			<Target title="projet">
 				<Option output="C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/projet.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug"/>
+=======
+				<Option working_dir="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projet">
+				<Option output="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/projet.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug"/>
+>>>>>>> 6cd0b69b03474ea90db0e64aeff3d92a7e1ce297
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -30,6 +45,7 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 projet"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -39,6 +55,17 @@
 			<Target title="projet/fast">
 				<Option output="C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/projet.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug"/>
+=======
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 projet"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projet/fast">
+				<Option output="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/projet.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug"/>
+>>>>>>> 6cd0b69b03474ea90db0e64aeff3d92a7e1ce297
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -49,6 +76,7 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 projet/fast"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -80,6 +108,39 @@
 			<Option target="projet"/>
 		</Unit>
 		<Unit filename="C:/Users/Marwan.ALHELO/Documents/GitHub/Bataille-navale/projet/CMakeLists.txt">
+=======
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 projet/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/main.c">
+			<Option target="projet"/>
+		</Unit>
+		<Unit filename="C:/Users/marwa/OneDrive/Documents/GitHub/BN-MAO/projet/CMakeLists.txt">
+>>>>>>> 6cd0b69b03474ea90db0e64aeff3d92a7e1ce297
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
