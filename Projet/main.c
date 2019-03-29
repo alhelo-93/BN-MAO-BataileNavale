@@ -22,19 +22,20 @@
 //
 #define size 10
 #pragma execution_character_set("utf-8")
-;
+#define CUBE 219
+#define CARRE 176
 
 int grillemodele[10][10] = {
-        {3, 0, 0, 0, 0, 0, 0, 0, 0, 9},
-        {3, 0, 0, 0, 0, 0, 1, 0, 0, 9},
-        {3, 0, 0, 0, 0, 0, 0, 0, 0, 9},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
-        {0, 0, 2, 2, 0, 0, 0, 0, 0, 9},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 9}};
+        {3, 0, 0,  0,  0, 0, 0,  0,  0, 0},
+        {3, 0, 0,  0,  0, 0, 1,  0,  0, 0},
+        {3, 0, 0,  -1, 0, 0, 0,  0,  0, 0},
+        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
+        {0, 0, 0,  0,  4, 4, 4,  14, 0, 0},
+        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
+        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
+        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
+        {0, 0, 22, 22, 0, 0, -1, 0,  0, 0},
+        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0}};
 
 
 // fonction de dessin
@@ -61,15 +62,33 @@ void centerborder(int Num, int width) {
 
     printf("%3d", Num + 1);
 
-    printf("%c  ", SVSB ); //│
+    printf("%c  ", SVSB); //│
+
 
     for (int i = 0; i < width; i++) { //│   │    │
 
-        printf("%d %c  ", grillemodele[Num][i], SVSB);
+        char display = '~';
+        printf("%c %c ", display, SVSB);
 
+        if (grillemodele[Num][i] < 0) {
+            printf(".");
+        }
+        else if (grillemodele[Num][i] < 10) {
+            printf("X");
+        }
+        else if (grillemodele[Num][i] <= 20) {
+            printf("%c", CUBE);
+
+        }
+        else if (grillemodele[Num][i] > 20) {
+            printf("%c", CARRE);
+        }
+        }
+
+            printf("\n");//│
     }
-    printf("\n");//│
-}
+
+
 
 //├─────┼─────┤
 void crossborder(int width) {
