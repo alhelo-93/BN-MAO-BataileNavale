@@ -1,6 +1,6 @@
 /*Prénom:marwan
- * nom:alhelo
- * date:08.03.2018
+ * nom  :alhelo
+ * date :08.03.2018
  * titre:bataille navale
  *
  */
@@ -61,11 +61,11 @@ void centerborder(int Num, int width) {
 
     printf("%3d", Num + 1);
 
-    printf("%c  ", SVSB); //│
+    printf("%c  ", SVSB ); //│
 
     for (int i = 0; i < width; i++) { //│   │    │
 
-        printf("~ %c  ", SVSB);
+        printf("%d %c  ", grillemodele[Num][i], SVSB);
 
     }
     printf("\n");//│
@@ -100,7 +100,7 @@ void bottom(int width) {
 // ├─────┼─────┤
 // │     │     │
 // └─────┴─────┘
-void gillevid() {
+void grille() {
     for (int row = 0; row < size; row++) {
         if (row == 0) {
             topborder(size);
@@ -143,7 +143,7 @@ int main() {
                         case 0:
                             break;
                         case 1:
-                            printf("pas encour donné !!");
+                            grille();
                             break;
                         case 2:
                             printf("pas encour donné !!");
@@ -159,7 +159,7 @@ int main() {
 
                 break;
             case 3:
-                gillevid(size);
+                grille(size);
                 break;
             default:
                 printf("Choisissez de la list s'il vous plaît\n");
@@ -170,22 +170,3 @@ int main() {
     return 0;
 
 }
-/* if (choix > 3) {
-
-        printf("Choisissez de la list s'il vous plaît\n");
-
-    } else if (choix == 1) {
-
-    } else if (choix == 2) {
-
-        }
-
-
-    } else if (choix == 3) {
-
-
-    } else {
-        printf("Au revoir  !");
-
-    }
-}*/
