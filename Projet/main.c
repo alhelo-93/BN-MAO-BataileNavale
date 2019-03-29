@@ -62,32 +62,26 @@ void centerborder(int Num, int width) {
 
     printf("%3d", Num + 1);
 
-    printf("%c  ", SVSB); //│
+    printf("%c", SVSB); //│
 
 
     for (int i = 0; i < width; i++) { //│   │    │
 
         char display = '~';
-        printf("%c %c ", display, SVSB);
 
         if (grillemodele[Num][i] < 0) {
-            printf(".");
-        }
-        else if (grillemodele[Num][i] < 10) {
-            printf("X");
-        }
-        else if (grillemodele[Num][i] <= 20) {
-            printf("%c", CUBE);
+            display = '.';
+        } else if (grillemodele[Num][i] <= 20 && grillemodele[Num][i] > 10) {
+            display = CUBE;
 
+        } else if (grillemodele[Num][i] > 20) {
+            display = CARRE;
         }
-        else if (grillemodele[Num][i] > 20) {
-            printf("%c", CARRE);
-        }
-        }
-
-            printf("\n");//│
+        printf("  %c %c", display, SVSB);
     }
 
+    printf("\n");//│
+}
 
 
 //├─────┼─────┤
