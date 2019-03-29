@@ -125,7 +125,26 @@ void grille() {
 
     bottom(size);
 }
+void jouer(){
+    int nbbateau = 3;
+    int nbbateaucoule=0;
+    char tire [10];
+    // tant que le nombres du bateaux coulé plus petit que trois
+    while(nbbateaucoule<nbbateau){
 
+        //     afficher la grille
+        grille();
+        //     demander ou veut tire
+        printf("ou tu veux tirer?");
+        scanf("%s", tire);
+        //     vérfier la donnée
+        //     regarder le reusltat de tire et changer le modéle
+        //
+
+    }
+
+
+}
 
 int main() {
     int choix = 1;
