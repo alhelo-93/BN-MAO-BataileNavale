@@ -28,7 +28,7 @@
 int grillemodele[10][10] = {
         {3, 0, 0,  0,  0, 0, 0,  0,  0, 0},
         {3, 0, 0,  0,  0, 0, 1,  0,  0, 0},
-        {3, 0, 0,  -1, 0, 0, 0,  0,  0, 0},
+        {3, 0, 0,  -1, 0, 0, 1,  0,  0, 0},
         {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
         {0, 0, 0,  0,  4, 4, 4,  14, 0, 0},
         {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
@@ -125,19 +125,32 @@ void grille() {
 
     bottom(size);
 }
-void jouer(){
+
+void jouer() {
     int nbbateau = 3;
-    int nbbateaucoule=0;
-    char tire [10];
+    int nbbateaucoule = 0;
+    char tire[10];
+    int x;
+    int y;
     // tant que le nombres du bateaux coulé plus petit que trois
-    while(nbbateaucoule<nbbateau){
+    while (nbbateaucoule < nbbateau) {
 
         //     afficher la grille
         grille();
         //     demander ou veut tire
-        printf("ou tu veux tirer?");
+        printf("Quelle case voulez-vous tirer ?\n");
         scanf("%s", tire);
+        x = tire[1] - 49;
+        y = tire[0] - 65;
+
         //     vérfier la donnée
+        if (grillemodele[x][y] == 0) {
+            printf("A l'eau\n");
+            grillemodele[x][y] = -1;
+        } else if (grillemodele[x][y] > 0 && grillemodele[x][y] < 10) {
+            printf("vous avez touché\n");
+            grillemodele[x][y] = grillemodele[x][y] + 10;
+        }
         //     regarder le reusltat de tire et changer le modéle
         //
 
@@ -191,7 +204,8 @@ int main() {
 
                 break;
             case 3:
-                grille(size);
+
+                jouer();
                 break;
             default:
                 printf("Choisissez de la list s'il vous plaît\n");
