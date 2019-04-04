@@ -127,6 +127,7 @@ void grille() {
 }
 
 void jouer() {
+    SetConsoleOutputCP(65001);
     int nbbateau = 3;
     int nbbateaucoule = 0;
     char tire[10];
@@ -135,6 +136,7 @@ void jouer() {
     // tant que le nombres du bateaux coulé plus petit que trois
     while (nbbateaucoule < nbbateau) {
 
+
         //     afficher la grille
         grille();
         //     demander ou veut tire
@@ -142,14 +144,16 @@ void jouer() {
         scanf("%s", tire);
         x = tire[1] - 49;
         y = tire[0] - 65;
-
+        SetConsoleOutputCP(65001);
         //     vérfier la donnée
         if (grillemodele[x][y] == 0) {
             printf("A l'eau\n");
             grillemodele[x][y] = -1;
         } else if (grillemodele[x][y] > 0 && grillemodele[x][y] < 10) {
-            printf("vous avez touché\n");
+            printf("vous avez touché \n");
             grillemodele[x][y] = grillemodele[x][y] + 10;
+        } else {
+            printf("toushé 2 fois\n\n");
         }
         //     regarder le reusltat de tire et changer le modéle
         //
@@ -179,6 +183,7 @@ int main() {
             case 2:
 
                 while (menu2 != 0) {
+                    SetConsoleOutputCP(65001);
                     //system("cls");
                     printf("\n1.Grille fixe \n2.Choix d'une grille existant \n3.placement aléatoir\n0.Retour arrière");
 
@@ -191,10 +196,10 @@ int main() {
                             grille();
                             break;
                         case 2:
-                            printf("pas encour donné !!");
+                            printf("en tin de développer !");
                             break;
                         case 3:
-                            printf("pas encour donné !!");
+                            printf("en tin de développer!!");
                             break;
                         default:
                             printf("Choisissez de la list s'il vous plaît\n");
