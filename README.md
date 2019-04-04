@@ -25,7 +25,7 @@ pour exécuter le jeu les requis besion :
 
 Pour exécuter le programme, vous devez:
 
-- voir le génération 
+- voir la génération 
 =======
 # DESCRIPTIF DU PROJET
 
