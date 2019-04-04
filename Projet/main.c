@@ -26,7 +26,7 @@
 #define CARRE 176
 
 int grillemodele[10][10] = {
-        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {3, 0, 0, 0, 0, 1, 0, 0, 0, 0},
         {3, 0, 0, 0, 0, 0, 1, 0, 0, 0},
         {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -182,12 +182,6 @@ void jouer() {
                 }
             }
         }
-
-        //
-        //
-        //
-
-
     }
 
 
@@ -195,6 +189,33 @@ void jouer() {
 int gameover(){
     int victoire=1;
     int echec=0;
+
+        for (int boat = 1; boat <= 4; boat++) {
+            int nb = 0;
+            int val;
+            for (int x = 0; x < size; x++) {
+                for (int y = 0; y < size; y++) {
+                    val = grillemodele[x][y];
+                    if (val == boat+10) {
+                        nb++;
+                    }
+                }
+            }
+            if (nb == boat) {
+                printf("vous avez coulé le bateua de %d\n\n",boat);
+                for (int x = 0; x < size; x++) {
+                    for (int y = 0; y < size; y++) {
+                        val = grillemodele[x][y];
+                        if (val == boat+10) {
+                            grillemodele[x][y] = val+10;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
 
 
 }
