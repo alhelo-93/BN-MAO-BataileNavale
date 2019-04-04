@@ -2,7 +2,8 @@
 # BataileNaval
 
 ## Description
-Bataile Navale c'est un projet coder en C type de projet un jeu    
+- Bataile Navale c'est un projet coder en C 
+- type de projet un jeu    
 
 ## Génération
 pour exécuter le jeu les requis besion :
