@@ -26,16 +26,16 @@
 #define CARRE 176
 
 int grillemodele[10][10] = {
-        {3, 0, 0,  0,  0, 0, 0,  0,  0, 0},
-        {3, 0, 0,  0,  0, 0, 1,  0,  0, 0},
-        {3, 0, 0,  -1, 0, 0, 1,  0,  0, 0},
-        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
-        {0, 0, 0,  0,  4, 4, 4,  14, 0, 0},
-        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
-        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
-        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0},
-        {0, 0, 22, 22, 0, 0, -1, 0,  0, 0},
-        {0, 0, 0,  0,  0, 0, 0,  0,  0, 0}};
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {3, 0, 0, 0, 0, 0, 1, 0, 0, 0},
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 4, 4, 4, 4, 0, 0},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 2, 2, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
 
 
 // fonction de dessin
@@ -60,10 +60,9 @@ void topborder(int width) {
 void centerborder(int Num, int width) {
 
 
-    printf("%3d", Num + 1);
+    printf("%3d", Num);
 
     printf("%c", SVSB); //│
-
 
     for (int i = 0; i < width; i++) { //│   │    │
 
@@ -133,6 +132,7 @@ void jouer() {
     char tire[10];
     int x;
     int y;
+
     // tant que le nombres du bateaux coulé plus petit que trois
     while (nbbateaucoule < nbbateau) {
 
@@ -141,27 +141,64 @@ void jouer() {
         grille();
         //     demander ou veut tire
         printf("Quelle case voulez-vous tirer ?\n");
-        scanf("%s", tire);
-        x = tire[1] - 49;
+        scanf("%s", &tire);
+        x = tire[1] - 48;
         y = tire[0] - 65;
         SetConsoleOutputCP(65001);
         //     vérfier la donnée
+        //     regarder le reusltat de tire et changer le modéle
+        //
         if (grillemodele[x][y] == 0) {
             printf("A l'eau\n");
             grillemodele[x][y] = -1;
         } else if (grillemodele[x][y] > 0 && grillemodele[x][y] < 10) {
-            printf("vous avez touché \n");
+            printf("vous avez touché \n\n\n");
             grillemodele[x][y] = grillemodele[x][y] + 10;
         } else {
-            printf("toushé 2 fois\n\n");
+            printf("touché 2 fois\n\n");
         }
-        //     regarder le reusltat de tire et changer le modéle
+
+        //regarder si on acoulé un bateau
+        for (int boat = 1; boat <= 4; boat++) {
+            int nb = 0;
+            int val;
+            for (int x = 0; x < size; x++) {
+                for (int y = 0; y < size; y++) {
+                    val = grillemodele[x][y];
+                    if (val == boat+10) {
+                        nb++;
+                    }
+                }
+            }
+            if (nb == boat) {
+                printf("vous avez coulé le bateua de %d\n\n",boat);
+                for (int x = 0; x < size; x++) {
+                    for (int y = 0; y < size; y++) {
+                        val = grillemodele[x][y];
+                        if (val == boat+10) {
+                            grillemodele[x][y] = val+10;
+                        }
+                    }
+                }
+            }
+        }
+
         //
+        //
+        //
+
 
     }
 
 
 }
+int gameover(){
+    int victoire=1;
+    int echec=0;
+
+
+}
+
 
 int main() {
     int choix = 1;
