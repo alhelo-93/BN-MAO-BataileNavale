@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # BataileNaval
 
 ## Description
@@ -47,4 +47,4 @@ Le type d’application C demandé doit offrir les fonctionnalités minimales su
 - Un menu de type console sera utilisé pour accéder aux différentes fonctionnalités.
 
 - Une extension pourra être envisagée pour ceux qui auraient terminé toutes les fonctionnalités avant la fin du temps imparti. Elle sera à discuter entre l’élève et le mandant du projet.
->>>>>>> 85c36c02156bd23b84112c1b72bc7348bdb8909b
+
