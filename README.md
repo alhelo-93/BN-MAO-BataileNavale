@@ -1,8 +1,9 @@
-<<<<<<< HEAD
+
 # BataileNaval
 
 ## Description
-Bataile Navale c'est un projet coder en C type de projet un jeu    
+- Bataile Navale c'est un projet coder en C 
+- type de projet un jeu    
 
 ## Génération
 pour exécuter le jeu les requis besion :
@@ -24,7 +25,7 @@ pour exécuter le jeu les requis besion :
 
 Pour exécuter le programme, vous devez:
 
-- voir le génération 
+- voir la génération 
 =======
 # DESCRIPTIF DU PROJET
 
@@ -47,4 +48,4 @@ Le type d’application C demandé doit offrir les fonctionnalités minimales su
 - Un menu de type console sera utilisé pour accéder aux différentes fonctionnalités.
 
 - Une extension pourra être envisagée pour ceux qui auraient terminé toutes les fonctionnalités avant la fin du temps imparti. Elle sera à discuter entre l’élève et le mandant du projet.
->>>>>>> 85c36c02156bd23b84112c1b72bc7348bdb8909b
+
