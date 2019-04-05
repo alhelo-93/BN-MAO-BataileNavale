@@ -141,8 +141,6 @@ int gameover(){
 
 void jouer() {
     SetConsoleOutputCP(65001);
-    int nbbateau = 3;
-    int nbbateaucoule = 0;
     char tire[10];
     int x;
     int y;
@@ -210,6 +208,7 @@ int main() {
         SetConsoleOutputCP(65001);
         //system("cls");
         printf(" \n1.Affiche l'aide \n2.placer les bateaux  \n3.Jouer\n0.Quitter \n");
+        printf("\n\npetite astuc :\n\n taper ou choisiessiez de même lettre que la list par exemple 0 1 2 et ne pas n'importer quoi !! \n\n\n");
         printf("Quel est votre choix ?\n");
         scanf("%d", &choix);
 
@@ -226,6 +225,7 @@ int main() {
                     SetConsoleOutputCP(65001);
                     //system("cls");
                     printf("\n1.Grille fixe \n2.Choix d'une grille existant \n3.placement aléatoir\n0.Retour arrière");
+                    printf("\n\npetite astuc :\n\n taper ou choisiessiez de même lettre que la list par exemple A0 A1 A2 et ne pas n'importer quoi !! \n\n\n");
 
                     printf("\nQuel est votre choix ?\n");
                     scanf("%d", &menu2);
@@ -233,7 +233,7 @@ int main() {
                         case 0:
                             break;
                         case 1:
-                            grille();
+                            jouer();
                             break;
                         case 2:
                             printf("en tin de développer !");
