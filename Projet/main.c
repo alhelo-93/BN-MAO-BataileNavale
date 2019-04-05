@@ -124,6 +124,20 @@ void grille() {
 
     bottom(size);
 }
+int gameover(){
+    int val;
+    for (int x = 0; x < size; x++) {
+        for (int y = 0; y < size; y++) {
+            val = grillemodele[x][y];
+            if(val>1 && val<9){
+                return (0);
+            }
+        }
+
+    }
+    printf("Victoir!!!!\n\n");
+    return (1);
+}
 
 void jouer() {
     SetConsoleOutputCP(65001);
@@ -134,7 +148,7 @@ void jouer() {
     int y;
 
     // tant que le nombres du bateaux coulé plus petit que trois
-    while (nbbateaucoule < nbbateau) {
+    while (!gameover()) {
 
 
         //     afficher la grille
@@ -186,39 +200,7 @@ void jouer() {
 
 
 }
-int gameover(){
-    int victoire=1;
-    int echec=0;
 
-        for (int boat = 1; boat <= 4; boat++) {
-            int nb = 0;
-            int val;
-            for (int x = 0; x < size; x++) {
-                for (int y = 0; y < size; y++) {
-                    val = grillemodele[x][y];
-                    if (val == boat+10) {
-                        nb++;
-                    }
-                }
-            }
-            if (nb == boat) {
-                printf("vous avez coulé le bateua de %d\n\n",boat);
-                for (int x = 0; x < size; x++) {
-                    for (int y = 0; y < size; y++) {
-                        val = grillemodele[x][y];
-                        if (val == boat+10) {
-                            grillemodele[x][y] = val+10;
-                        }
-                    }
-                }
-            }
-
-        }
-
-
-
-
-}
 
 
 int main() {
@@ -269,6 +251,7 @@ int main() {
             case 3:
 
                 jouer();
+
                 break;
             default:
                 printf("Choisissez de la list s'il vous plaît\n");
