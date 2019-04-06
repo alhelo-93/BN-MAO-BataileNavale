@@ -255,7 +255,7 @@ int main() {
                 break;
             default:
                 printf("Choisissez de la list s'il vous plaît\n");
-                
+
                 break;
         }
 
