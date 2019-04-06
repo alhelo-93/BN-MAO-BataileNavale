@@ -135,7 +135,7 @@ int gameover(){
         }
 
     }
-    printf("Victoir!!!!\n\n");
+    printf("Victoir!!!!,félicitation\n\n");
     return (1);
 }
 
@@ -167,7 +167,7 @@ void jouer() {
             printf("vous avez touché \n\n\n");
             grillemodele[x][y] = grillemodele[x][y] + 10;
         } else {
-            printf("touché 2 fois\n\n");
+            printf("Déja touché essyer de tirer sur une autre case \n\n");
         }
 
         //regarder si on acoulé un bateau
@@ -183,7 +183,7 @@ void jouer() {
                 }
             }
             if (nb == boat) {
-                printf("vous avez coulé le bateua de %d\n\n",boat);
+                printf("vous avez coulé le bateau de %d\n\n",boat);
                 for (int x = 0; x < size; x++) {
                     for (int y = 0; y < size; y++) {
                         val = grillemodele[x][y];
@@ -236,10 +236,10 @@ int main() {
                             jouer();
                             break;
                         case 2:
-                            printf("en tin de développer !");
+                            printf("En trin de développer !!");
                             break;
                         case 3:
-                            printf("en tin de développer!!");
+                            printf("En trin de développer!!");
                             break;
                         default:
                             printf("Choisissez de la list s'il vous plaît\n");
@@ -255,6 +255,7 @@ int main() {
                 break;
             default:
                 printf("Choisissez de la list s'il vous plaît\n");
+                
                 break;
         }
 
