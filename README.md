@@ -28,7 +28,7 @@ Pour exécuter le programme, vous devez:
 - voir la génération 
 =======
 
-
+##
 # DESCRIPTIF DU PROJET
 
 Le type d’application C demandé doit offrir les fonctionnalités minimales suivantes :
